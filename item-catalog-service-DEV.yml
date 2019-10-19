@@ -1,3 +1,5 @@
+server:
+  port: 8088
 eureka:
   instance:
     hostname: ${vcap.application.uris[0]:localhost}
