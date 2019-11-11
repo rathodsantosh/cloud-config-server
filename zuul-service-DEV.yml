@@ -3,7 +3,7 @@ server:
 zuul:
   routes:
     item-catalog:
-      path: /items/**
+      path: items/**
       service-id: item-catalog-service
     edge-service:
       path: /top-brands/**
