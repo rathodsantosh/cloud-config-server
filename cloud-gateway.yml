@@ -1,0 +1,13 @@
+spring:     
+  cloud:
+    gateway:
+      routes:
+      - id: item-catalog-service
+        uri: lb://item-catalog-service/**
+        predicates:
+        - Path=/items
+      - id: edge-service
+        uri: lb://edge-service/**
+        predicates:
+        - Path=/brand-items1
+     
