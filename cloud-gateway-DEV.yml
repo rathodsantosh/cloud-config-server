@@ -3,7 +3,7 @@ spring:
     gateway:
       routes:
       - id: item-catalog-service
-        uri: lb://item-catalog-service/**
+        uri: lb://items/**
         predicates:
         - Path=/items
       - id: edge-service
