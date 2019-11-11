@@ -2,7 +2,7 @@ server:
   port: 8090
 zuul:
   routes:
-    item-catalog-service:
+    item-catalog:
       path: /items/**
       service-id: item-catalog-service
     edge-service:
