@@ -9,3 +9,4 @@ zuul:
     edge-service:
       path: /top-brands/**
       service-id: edge-service
+      strip-prefix: false
