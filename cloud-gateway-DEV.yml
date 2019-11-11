@@ -3,11 +3,11 @@ spring:
     gateway:
       routes:
       - id: item-catalog-service
-        uri: ws://item-catalog-service:8088
+        uri: lb://item-catalog-service
         predicates:
         - Path=/items
       - id: edge-service
-        uri: ws://edge-service:8089
+        uri: lb://edge-service
         predicates:
         - Path=/top-brands
      
